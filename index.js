@@ -13,8 +13,8 @@ export const icon = (id, x=0, y=0, name='undefined', type='mxgraph.aws4.vpc') =>
           <mxGeometry x="${x}" y="${y}" width="80" height="80" as="geometry" />
         </mxCell>`
 
-export const link = (id, dashed=false, source, target, color='#000000') => `
-        <mxCell id="${id}" style="orthogonalLoop=1;html=1;dashed=${dashed ? '1' : '0'};strokeColor=${color};" edge="1" parent="1" source="${source}" target="${target}">
+export const link = (id, dashed=false, source, target, color='#000000', text='') => `
+        <mxCell id="${id}" value="${text}" style="orthogonalLoop=1;html=1;dashed=${dashed ? '1' : '0'};strokeColor=${color};" edge="1" parent="1" source="${source}" target="${target}">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>`
 
